@@ -43,6 +43,8 @@ button {
   font-family: inherit;
   padding: 0;
   margin: 0;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 img {
   display: block;
@@ -192,7 +194,12 @@ a {
   gap: 10px;
 }
 
-.footer-social-item {
+.footer-social-link {
+  padding: 12px;
+  text-align: center;
+}
+
+.footer-social-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -212,9 +219,9 @@ a {
   fill: #ffffff;
 }
 
-.footer-logo {
+/* .footer-logo {
   margin-bottom: 20px;
-}
+} */
 
 .footer-link:not(:last-child) {
   margin-bottom: 8px;
@@ -227,6 +234,10 @@ a {
 .page-footer {
   padding: 60px 0;
   background-color: #2f303a;
+}
+
+.address {
+  margin-top: 20px;
 }
 
 .address .link-address {
@@ -274,19 +285,16 @@ a {
 /* стили для "студия" */
 /* hero */
 
-.hero-wrapper {
+.hero {
   max-width: 1600px;
-  max-height: 600px;
-
-  margin-left: auto;
-  margin-right: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
 
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url("../images/img-bg.jpg") no-repeat center/cover, #2f303a;
-}
-
-.hero {
-  background-color: #2f303a;
+    url("../images/img-bg.jpg"), #2f303a;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero-title {
